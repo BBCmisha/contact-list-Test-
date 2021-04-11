@@ -1,0 +1,226 @@
+@import 'variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 15px;
+
+    &__title {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 40px;
+        color: $app-light;
+    }
+    &__subtitle {
+        color: $app-light;
+    }
+}
+
+.contact-info {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1300px;
+        padding: 0 15px;
+    }
+
+    &__title {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 40px;
+        color: $app-light;
+    }
+
+    &__item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 10px 10px;
+        border-bottom: 3px solid $app-light;
+        font-size: 24px;
+    }
+
+    &__name {
+        font-weight: 600;
+    }
+}
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 23%;
+    margin: 10px;
+    padding: 20px 10px 10px 20px;
+    color: $app-black;
+    box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+
+    &__id {
+        color: $app-orange;
+        text-align: left;
+        font-size: 22px;
+        transition: all .4s linear;
+    }
+
+    &__name {
+        text-align: left;
+        font-size: 35px;
+    }
+
+    &__activities {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+}
+
+.app-popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+
+    &__title {
+        margin-bottom: 20px;
+        color: $app-light;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 30px;
+        background-color: #fff;
+    }
+}
+
+.app-verification-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 1;
+
+    &__title {
+        margin-bottom: 5px;
+    }
+}
+
+.app-button {
+    min-width: 100px;
+    padding: 5px 10px;
+    background-color: $app-light;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: $app-black;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: $app-orange;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.error {
+        &:hover {
+            background-color: $app-red;
+        }
+    }
+}
+
+.app-floating-button {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    border: 3px solid $app-orange;
+    background: none;
+    bottom: 30px;
+    right: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    color: $app-orange;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: $app-orange;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.app-input {
+    min-width: 250px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid $app-light;
+    padding: 5px 0 5px 10px;
+    font-size: 18px;
+
+    &:focus {
+        outline: none;
+        border-bottom: 3px solid $app-orange;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__message {
+        margin-top: 5px;
+        text-align: left;
+        color: $app-red;
+    }
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
