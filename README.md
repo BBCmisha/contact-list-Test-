@@ -1,9 +1,11 @@
 # test-contact-list
 
-## To deploy the project in docker run the following command
-
+### To deploy the project in docker run the following command
+```
 docker-compose up
-## Project setup
+```
+
+### Project setup
 ```
 npm install
 ```
